@@ -22,13 +22,8 @@ public class Adatin {
 		driver.get("http://adactinhotelapp.com/index.php");
 		driver.manage().window().maximize();
 		
-		
-				TakesScreenshot ts = (TakesScreenshot) driver;
-				File src =ts.getScreenshotAs(OutputType.FILE);
-				File des=new File ("Sucessful//output.png");
-				FileUtils.copyFile(src, des);
 
-	
+				TakesScreenshot ts=(TakesScreenshot) driver;
 				
 				//page 1
 				driver.findElement(By.id("username")).sendKeys("Joshva45");
